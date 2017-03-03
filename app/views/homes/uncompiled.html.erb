@@ -1,0 +1,8 @@
+<% require 'benchmark' %>
+<% Benchmark.bmbm do |x| %>
+  <% report = x.report 'compiled' do |x| %>
+    <% 1000.times do %>
+      <%= render partial: "hello" %>
+    <% end %>
+  <% end %>
+<% end %>

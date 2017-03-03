@@ -1,0 +1,10 @@
+<% require 'benchmark' %>
+<% Benchmark.bmbm do |x| %>
+  <% report = x.report 'compiled' do |x| %>
+    <% 1000.times do %>
+      <span>
+        Hello World,
+      </span>
+    <% end %>
+  <% end %>
+<% end %>
