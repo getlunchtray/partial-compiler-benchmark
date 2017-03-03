@@ -15,4 +15,6 @@ This app will perform benchmark testing against rendering partials.
 
 On the homepage you'll get options to view the compiled or non-compiled page. By default the uncompiled page will render 1000 of the same partials. Non-compiled is effectively the same, however, all of the code is inline.
 
+Templates and the partial can be found in `app/views/partials`
+
 After editing the `compiled.uc.html.erb` (or the "hello" partial), remember to run `rake compiler:run`
