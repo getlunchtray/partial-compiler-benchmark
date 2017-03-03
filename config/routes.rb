@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: "homepage#index"
 
-  get "/compiled", to: "homes#compiled"
-  get "/uncompiled", to: "homes#uncompiled"
+  get "/compiled", to: "partials#compiled"
+  get "/uncompiled", to: "partials#uncompiled"
 end

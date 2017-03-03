@@ -1,4 +1,4 @@
-class HomesController < ApplicationController
+class PartialsController < ApplicationController
   def compiled
   end
 
